@@ -1,1 +1,2 @@
-job('nodejs-example-dsl')
+job('nodejs-example-dsl') {
+}
