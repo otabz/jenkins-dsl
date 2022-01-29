@@ -7,8 +7,6 @@ job('docker-nodejs-example-dsl') {
             repositoryName('otabz/nodejs-example')
             tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
             registryCredentials('docker-hub')
-            forcePull(false)
-            createFingerprints(false)
             skipDecorate()
         }
     }
