@@ -8,6 +8,7 @@ job('docker-nodejs-example-dsl') {
             tag('${BUILD_TIMESTAMP}-${GIT_REVISION,length=7}')
             registryCredentials('docker-hub')
             skipDecorate()
+            skipTagAsLatest(true)
         }
     }
 }
